@@ -3,22 +3,24 @@ body {
 	font-family: 'Alice', serif;
 }
 
-h1 {
+.title {
 	background: url("../img/white.png");
 	border: 10px solid #2E1F47;
 	border-radius: 5px;
 	margin: 40px 0;
+	font-size: 2.5em;
+	font-family: 'Merienda', cursive;
+	color: #1E1C45;
+	text-align: left;
+
 }
 
 h1, h2 {
 		font-weight: normal;
 		color: #2e1f47;
 		font-family: 'Paprika', cursive;
+		text-align: center;
 	}
-
-h2 {
-	text-align: center;
-}
 
 h6, p {
 	text-align: center;
