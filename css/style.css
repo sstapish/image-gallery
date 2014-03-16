@@ -4,12 +4,21 @@ body {
 }
 
 
-h1 {
+h1, h2 {
 		font-weight: normal;
-		font-style: italic;
+		color: #2e1f47;
 		text-align: center;
 		margin: 40px 0;
+		font-family: 'Paprika', cursive;
 	}
+
+
+h6, p {
+	text-align: center;
+	margin: 40px 0;
+	font-family: 'Alice', serif;
+	color: #1e1c45;
+}
 
 figure {
 	margin: 0;
@@ -24,14 +33,72 @@ ul {
 a img {
 	border: none;
 	}
+
+#logo {
+	float: right;
+	margin: 0 3%;
+	height: 10%;
+	width: 10%;
+}
+
+	/*Navigation*/
+   
+
+	#navbar ul {
+	width: 100%;
+	margin: 5% 0 3% 0;
+	list-style: none;
+	float: right;
+
+	background: url("../img/white.png");
+	}
+	#navbar ul li {
+	float: left;
+	color: #1e1c45;
+	}
+	#navbar ul li.home {
+		width: 15%;
+	}
+	#navbar ul li.bio {
+		width: 35%;
+	}
+	#navbar ul li.portfolio {
+		width: 15%;
+	}
+	#navbar ul li.contact {
+		width: 25%;
+		margin: 0 5% 0 5%;
+		padding: 8px 0;
+		
+		text-align: right;
+		border: 0;
+		font-weight: 100;
+		font-size: .75em;
+		border-radius: 25px;
+		-webkit-border-radius: 25px;
+		-moz-border-radius: 25px;
+		text-transform: uppercase;
+	}
+	
+	
+	#navbar ul li a {
+	color: #1e1c45;
+	display: inline-block;
+	text-decoration: none;
+	}
+
 	
 /*Gallery Styling*/
+
+
 	.gallery {
 		max-width: 60%;
+    	max-height: 60%;
 		padding: 10px;
 		background: #666;
 		border-radius: 10px;
 		margin:  auto;
+		margin-bottom: 3%;
 		box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 	}
 
@@ -44,22 +111,27 @@ a img {
 		.gallery li {
 			float: left;
       width: 31%;
+      height: 31%;
 			margin: 1%;
 		}
 
 			.gallery li > a {
 				float: left;
-				max-height: 80px;
+				max-width: 100%;
+        max-height: 100px;
+        overflow: hidden;
 				-webkit-filter: grayscale(.5) sepia(.8);
 				-webkit-transition: .5s;
 				position: relative;
 			}
 
+
+/* pictures small thumbnails */
 				.gallery li > a img {
-				  width:200px;
-          height:80px;
+		       max-width: 100%;
+           
+          
           background:#ccc;
-					max-width: 100%;
 					box-shadow: 0 0 5px rgba(0, 0, 0, .3);
 					-webkit-transition: .5s;
 				}
@@ -94,12 +166,13 @@ a img {
 					z-index: 1;
 				}
 
+/* Pictures in lightbox */
 					.gallery article img {
 						opacity: 0;
 						-webkit-transition: .7s;
 						border: 10px solid #fff;
-           				 width: 400px;
-            			height: 320px;
+            width: 400px;
+            height: 320px;
 						max-height: 100%;
 						max-width: 100%;
 						box-sizing: border-box;
@@ -108,7 +181,7 @@ a img {
 
 					.gallery article:target img {
 						opacity: 1;
-           			 background: #ccc;
+            background: bl;
 					} 
 
 					.gallery figcaption {
@@ -119,7 +192,7 @@ a img {
 						color: #999;
 						margin-top: 20px;
 					}
-    /* navigation in light box*/
+/* navigation in light box*/
 				article .close {
 					position: absolute;
 					left: 50%;
@@ -136,24 +209,24 @@ a img {
 					-webkit-transition: .5s;
 				}
 
-					article .close:before {
-						content: "X";
-						color: #fff;
-						font-family: Arial;
-						font-weight: bold;
-						position: absolute;
-						padding-top: 3px;
-						top: 3px;
-						left: 5px;
-						width: 24px;
-						height: 21px;
-						background: #666;
-						border-radius: 50%;
-					}
+				article .close:before {
+					content: "X";
+					color: #fff;
+					font-family: Arial;
+					font-weight: bold;
+					position: absolute;
+					padding-top: 3px;
+					top: 3px;
+					left: 5px;
+					width: 24px;
+					height: 21px;
+					background: #666;
+					border-radius: 50%;
+				}
 
-					article .close:hover {
-						background: #fff;
-					}
+				article .close:hover {
+					background: #fff;
+				}
 
 				article .arrow {
 					position: absolute;
@@ -182,7 +255,7 @@ a img {
 					border-left: 60px solid rgba(250, 250, 250, .1);
 				}
 
-					article .next:hover,
-					article > a:hover ~ nav .next {
-						border-left: 60px solid rgba(250, 250, 250, .2);
-					}
+				article .next:hover,
+				article > a:hover ~ nav .next {
+					border-left: 60px solid rgba(250, 250, 250, .2);
+				}
