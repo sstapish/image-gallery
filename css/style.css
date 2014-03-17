@@ -58,39 +58,47 @@ a img {
 
 	/*Navigation*/
    
-	#navbar ul {
+	#navbar ul li a {
+  text-decoration: none;
+}
+
+#navbar ul {
 	width: 60%;
 	margin: 5% 0 3% 0;
 	list-style: none;
 	float: right;
-
+  list-style: none;
+	padding: 0;
+  display: inline;
 		}
 
 	#navbar ul li {
-	float: left;
 	color: #1e1c45;
+  float: left;
+  display: list-item;
+  margin: 2% 5%;
 	}
+
+#navbar ul li a {
+	color: #1e1c45;
+	display: inline-block;
+	text-decoration: none;
+	}
+
 	#navbar ul li.home {
 		width: 15%;
 	}
 	#navbar ul li.bio {
-		width: 35%;
+		width: 15%;
 	}
 	#navbar ul li.portfolio {
 		width: 15%;
 	}
 	#navbar ul li.contact {
-		width: 25%;
-		margin: 0 5% 0 5%;
-		padding: 8px 0;
+		width: 15%;
 		
-	}
+	} 
 		
-	#navbar ul li a {
-	color: #1e1c45;
-	display: inline-block;
-	text-decoration: none;
-	}
 
 	
 /*Gallery Styling*/
