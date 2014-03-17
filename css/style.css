@@ -115,11 +115,12 @@ a img {
 		max-width: 60%;
     	max-height: 60%;
 		padding: 10px;
-		background: #666;
+		background: #1E1C45;
 		border-radius: 10px;
 		margin:  auto;
 		margin-bottom: 3%;
-		box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+		box-shadow: 1px 1px 20px 10px rgba(30, 28, 69, .8);
+
 	}
 
 	.gallery:after {
