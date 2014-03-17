@@ -103,11 +103,19 @@ a img {
 	}
 	#navbar ul li.contact {
 		width: 15%;
-		
 	} 
 		
+	/* Pseudo-classes*/
+
+	#navbar ul li a:hover,
+	 #navbar ul li a:active {
+		color: #334561;
+		font-size: 1.25em;
+
+	}
 
 	
+
 /*Gallery Styling*/
 
 
@@ -139,7 +147,7 @@ a img {
 		.gallery li > a {
 			float: left;
 			max-width: 100%;
-    		max-height: 100px; /* possibly change to be bigger?*/
+    		max-height: 150px; 
     		overflow: hidden;
 			-webkit-filter: grayscale(.5) sepia(.8);
 			-webkit-transition: .5s;
