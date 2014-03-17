@@ -25,7 +25,7 @@ h1, h2 {
 h6, p {
 	text-align: center;
 	margin: 40px 0;
-	font-family: 'Alice', serif;
+	
 	color: #1e1c45;
 }
 
@@ -36,6 +36,7 @@ figure {
 ul {
 	list-style: none;
 		padding: 0;
+		font-family: 'Alice', serif;
     
 	}
 
@@ -58,25 +59,22 @@ a img {
 
 	/*Navigation*/
    
-	#navbar ul li a {
-  text-decoration: none;
-}
-
 #navbar ul {
 	width: 60%;
-	margin: 5% 0 3% 0;
+	margin: 1% 0 3% 5%;
 	list-style: none;
-	float: right;
-  list-style: none;
+	
+	list-style: none;
 	padding: 0;
-  display: inline;
+  	display: inline-block;
 		}
 
 	#navbar ul li {
 	color: #1e1c45;
-  float: left;
-  display: list-item;
-  margin: 2% 5%;
+  	float: left;
+ 	display: list-item;
+ 	margin: 2% 5%;
+ 	font-family: 'Alice', serif;
 	}
 
 #navbar ul li a {
@@ -123,8 +121,8 @@ a img {
 
 		.gallery li {
 			float: left;
-      width: 31%;
-      height: 31%;
+     	 	width: 31%;
+     	 	height: 31%;
 			margin: 1%;
 		}
 
